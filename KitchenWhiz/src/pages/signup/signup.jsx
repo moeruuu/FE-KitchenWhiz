@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-import style from './login.module.css';
+import style from '../login/login.module.css';
 import logo from '/logo.png';
 
-const Login = () => {
+const Signup = () => {
     const navigate = useNavigate();
     useEffect(() => {}, []);
     return ( 
@@ -17,24 +17,32 @@ const Login = () => {
                     <p>KitchenWhiz sẽ biến mỗi bữa ăn thành một ‘show diễn’ cực chill!</p>
                 </div>
                 <div className={style.buttonContainer}>
-                    <button className={style.button} onClick={() => navigate('/signup')}>Đăng ký</button>
+                    <button className={style.button} onClick={() => navigate('/login')}>Đăng nhập</button>
                     <button className={style.button}>Tìm hiểu</button>
                 </div>
             </div>
             <div className={style.right}>
                 <div className={style.container}>
-                    <div className={style.title}>ĐĂNG NHẬP</div>
+                    <div className={style.title}>ĐĂNG KÝ</div>
                    <input
                    type="text"
-                   placeholder="Email or Username"
+                   placeholder="Email"
                    className={style.inputField} /> 
+                   <input
+                   type="text"
+                   placeholder="Username"
+                   className={style.inputField} />
                    <input
                    type="password"
                    placeholder="Password"
                    className={style.inputField} />
-                   <div className={style.forgotpassword}>Quên mật khẩu?</div>
+                    <input
+                   type="password"
+                   placeholder="Confirm Password"
+                   className={style.inputField} />
+
                    <div  style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <button className={style.button}>Đăng nhập</button>
+                        <button className={style.button}>Đăng ký</button>
                    </div>
                    
                 </div>
@@ -43,4 +51,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Signup;
