@@ -1,10 +1,10 @@
 .background {
     background-color: #E9DEF2;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column; 
-    align-items: center; 
-    
+    align-items: center;
+    padding-bottom: 50px;
 }
 .imgcorner {
     position: absolute;
@@ -82,4 +82,92 @@
   box-shadow: 0 0 5px #9066bc;
 }
 
+.titlenamefood {
+    font-size: 25px;
+    font-weight: bold;
+    color: #5e2798;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+}
 
+.titlefeat {
+    font-size: 25px;
+    font-weight: bold;
+    color: #5e2798;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 50px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 40px;
+}
+
+.featfoodcontainer {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.eachfeatcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgfeat {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.featname {
+    font-family: 'Nunito', sans-serif;
+    color: #966cc4;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+.btnmore {
+    background-color: white;
+    font-size: 17px;
+    font-weight: bold;
+    color: #72499e;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    width: 86%;
+    border: 2px solid #553873;
+    transition: all 0.3s ease;
+}
+
+.textfeat {
+    font-family: 'Nunito', sans-serif;
+    color: #966cc4;
+    font-size: 16px;
+}
+
+.timefeat {
+  display: flex;
+  gap: 6px; 
+  font-size: 14px;
+  color: #666;
+  margin-top: 7px;
+}
+
+.iconView {
+  color: #5e2798; 
+  font-size: 16px;
+}
+
+.iconHeart {
+  color: #ba0606; 
+  font-size: 16px;
+}
